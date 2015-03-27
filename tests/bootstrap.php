@@ -1,4 +1,7 @@
 <?php
+
+require_once 'vendor/autoload.php';
+
 /**
  * Test suite bootstrap for CakeManager.
  *
