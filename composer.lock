@@ -131,12 +131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakemanager/cakephp-utils.git",
-                "reference": "7d194bba86ad76f59c74d3b129e1a48bcdd79627"
+                "reference": "13847ba19068f031a84b4c0392ba0c5fb643c586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakemanager/cakephp-utils/zipball/7d194bba86ad76f59c74d3b129e1a48bcdd79627",
-                "reference": "7d194bba86ad76f59c74d3b129e1a48bcdd79627",
+                "url": "https://api.github.com/repos/cakemanager/cakephp-utils/zipball/13847ba19068f031a84b4c0392ba0c5fb643c586",
+                "reference": "13847ba19068f031a84b4c0392ba0c5fb643c586",
                 "shasum": ""
             },
             "require": {
@@ -166,7 +166,7 @@
                 }
             ],
             "description": "Plugin for CakePHP 3.x with useful components and behaviors",
-            "time": "2015-03-27 18:45:52"
+            "time": "2015-03-30 17:57:59"
         },
         {
             "name": "cakephp/cakephp",
