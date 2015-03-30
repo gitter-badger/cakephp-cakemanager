@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CakeManager (http://cakemanager.org)
  * Copyright (c) http://cakemanager.org
@@ -30,7 +29,7 @@ define('APP', ROOT . 'tests' . DS . 'App' . DS);
 define('TMP', sys_get_temp_dir() . DS);
 define('CACHE', TMP);
 define('LOGS', TMP);
-define('CONFIG', ROOT . '/tests/config/');
+define('CONFIG', ROOT . 'config' . DS);
 
 //@codingStandardsIgnoreStart
 @mkdir(LOGS);

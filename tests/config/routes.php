@@ -16,17 +16,15 @@ namespace CakeManager\Test\App\Config;
 
 use Cake\Routing\Router;
 
-/**
- * Adding routes for the admin-prefix and CakeManager-Plugin
- */
+// Adding routes for the admin-prefix and CakeManager-Plugin
 Router::prefix('admin', function ($routes) {
     $routes->plugin('CakeManager', ['path' => '/manager'], function ($routes) {
 
         $routes->connect('/pages/*', [
-            'prefix'     => 'admin',
-            'plugin'     => 'CakeManager',
+            'prefix' => 'admin',
+            'plugin' => 'CakeManager',
             'controller' => 'Pages',
-            'action'     => 'display',
+            'action' => 'display',
         ]);
 
         $routes->fallbacks('InflectedRoute');
@@ -34,10 +32,8 @@ Router::prefix('admin', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
 
-/**
- * Adding routes for the api-prefix and CakeManager-Plugin
- */
-Router::prefix('api', function($routes) {
+// Adding routes for the api-prefix and CakeManager-Plugin
+Router::prefix('api', function ($routes) {
     $routes->plugin('CakeManager', ['path' => '/'], function ($routes) {
 
         $routes->extensions(['json']);
