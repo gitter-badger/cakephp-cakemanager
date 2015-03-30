@@ -26,7 +26,7 @@ define('ROOT', dirname(__DIR__) . DS);
 define('CAKE_CORE_INCLUDE_PATH', ROOT . 'vendor' . DS . 'cakephp' . DS . 'cakephp');
 define('CORE_PATH', ROOT . 'vendor' . DS . 'cakephp' . DS . 'cakephp' . DS);
 define('CAKE', CORE_PATH . 'src' . DS);
-define('APP', ROOT . 'tests' . DS . 'test_app' . DS);
+define('APP', ROOT . 'tests' . DS . 'App' . DS);
 define('TMP', sys_get_temp_dir() . DS);
 define('CACHE', TMP);
 define('LOGS', TMP);
@@ -54,7 +54,7 @@ mb_internal_encoding('UTF-8');
 
 Configure::write('debug', true);
 Configure::write('App', [
-    'namespace' => 'App',
+    'namespace' => 'CakeManager\Test\App',
     'encoding' => 'UTF-8',
     'base' => false,
     'baseUrl' => false,
@@ -122,4 +122,5 @@ Plugin::load('CakeManager', ['path' => ROOT, 'bootstrap' => true, 'routes' => tr
 
 Carbon\Carbon::setTestNow(Carbon\Carbon::now());
 
-
+DispatcherFactory::add('Routing');
+DispatcherFactory::add('ControllerFactory');
