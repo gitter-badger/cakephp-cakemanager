@@ -14,7 +14,7 @@
         "cakemanager/cakephp-utils": "1.0.x-dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.33"
+        "phpunit/phpunit": "4.x"
     },
     "extra": {
         "installer-name": "CakeManager"
@@ -28,7 +28,7 @@
         "psr-4": {
             "CakeManager\\Test\\": "tests",
             "CakeManager\\Test\\Fixture\\": "tests/Fixture",
-            "CakeManager\\Test\\App\\": "tests/App"
+            "App\\": "tests/App"
         }
     }
 }
