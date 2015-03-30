@@ -45,8 +45,6 @@ require CAKE . 'Core/ClassLoader.php';
 $loader = new Cake\Core\ClassLoader;
 $loader->register();
 
-$loader->addNamespace('Cake\Test\Fixture', ROOT . '/vendor/cakephp/cakephp/tests/Fixture');
-
 require_once CORE_PATH . 'config' . DS . 'bootstrap.php';
 
 date_default_timezone_set('UTC');
